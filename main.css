@@ -1,0 +1,220 @@
+body {
+  box-sizing: border-box;
+  height: fit-content;
+  width: 100vw;
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+h1,
+h2,
+h4 {
+  font-family: "Poppins", sans-serif;
+}
+a {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+}
+
+header {
+  background-image: url("/images/bg-hero-desktop.svg");
+  background-color: hsl(193, 100%, 96%);
+  height: fit-content;
+  width: 100%;
+  padding: 40px 50px;
+}
+
+header div:first-child {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header div:first-child img {
+  height: 30px;
+}
+header div:first-child a {
+  text-decoration: none;
+  color: #000000;
+  background-color: #ffffff;
+  padding: 10px 50px;
+  border-radius: 30px;
+  font-weight: bold;
+  font-size: small;
+  text-transform: capitalize;
+}
+header div:nth-of-type(2) {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 40px;
+}
+
+article h1 {
+  font-size: 38px;
+  font-weight: bold;
+}
+.top article a:last-child {
+  display: inline-block;
+  color: #ffffff;
+  background-color: hsl(322, 100%, 66%);
+  padding: 15px 70px;
+  border-radius: 70px;
+  margin-top: 10px;
+  font-size: 14px;
+  text-decoration: none;
+  opacity: 0.9;
+}
+.top h1,
+.top p {
+  color: hsl(192, 100%, 9%);
+  margin-bottom: 20px;
+}
+
+article a:hover,
+.top a:hover {
+  opacity: 0.5;
+}
+header div:nth-of-type(2) img {
+  width: 50%;
+  height: 100%;
+}
+/* MAIN SECTION*/
+
+main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+main div:first-child {
+  margin-top: 100px;
+}
+main div {
+  width: 90%;
+  height: fit-content;
+  margin: 20px auto;
+  padding: 50px 0;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 3px 3px 5px 3px rgb(220, 220, 240);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+main div img {
+  width: 30%;
+}
+
+.conversation {
+  display: flex;
+  flex-direction: column;
+
+  gap: 0.7rem;
+}
+
+.conversation p {
+  color: #777;
+}
+/*FOOTER*/
+footer {
+  width: 100%;
+  background-color: hsl(192, 100%, 9%);
+  margin-top: 250px;
+  padding: 200px 50px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+}
+.facebook {
+  stroke: white;
+}
+
+footer section div {
+  margin-top: 20px;
+}
+
+.location-text {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+.location-text img {
+  margin-top: 5px;
+}
+.phone-text,
+.email-text {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+footer section p {
+  display: inline;
+  color: white;
+}
+footer section a {
+  display: block;
+  text-decoration: none;
+  color: white;
+  margin-top: 20px;
+}
+.test {
+  align-self: center;
+  margin-top: 120px;
+  display: flex;
+  flex-direction: column;
+}
+
+footer + article {
+  width: fit-content;
+  background-color: white;
+  box-shadow: 3px 3px 5px 2px rgb(245, 241, 241);
+  padding: 60px 100px;
+  border-radius: 20px;
+  position: relative;
+  top: 120px;
+  left: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+footer + article a {
+  display: inline-block;
+  color: #ffffff;
+  background-color: hsl(322, 100%, 66%);
+  padding: 20px 90px;
+  border-radius: 30px;
+  margin-top: 40px;
+  font-weight: 700;
+  text-decoration: none;
+}
+footer + article h2 {
+  color: hsl(192, 100%, 9%);
+}
+small {
+  margin-top: 160px;
+  color: white;
+}
+.icons {
+  margin: 0;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media screen and (max-width: 500px) {
+  body {
+    width: 100vw;
+  }
+}
