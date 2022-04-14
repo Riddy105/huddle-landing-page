@@ -3,7 +3,10 @@ body {
   height: fit-content;
   width: 100vw;
   font-family: "Open Sans", sans-serif;
-  font-size: 18px;
+  font-size: 1.8rem;
+}
+html {
+  font-size: 10px;
 }
 * {
   box-sizing: border-box;
@@ -25,82 +28,91 @@ header {
   background-color: hsl(193, 100%, 96%);
   height: fit-content;
   width: 100%;
-  padding: 40px 50px;
+  padding: 4rem 6rem;
 }
 
-header div:first-child {
+.huddle {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 header div:first-child img {
-  height: 30px;
+  height: 3rem;
 }
 header div:first-child a {
   text-decoration: none;
   color: #000000;
   background-color: #ffffff;
-  padding: 10px 50px;
-  border-radius: 30px;
+  padding: 1rem 5rem;
+  border-radius: 3rem;
   font-weight: bold;
   font-size: small;
   text-transform: capitalize;
 }
-header div:nth-of-type(2) {
-  display: flex;
+.about-huddle {
+  display: grid;
+  grid-template-columns: 45fr 55fr;
+  margin-top: 4rem;
+  align-items: center;
+  column-gap: 2rem;
+
+  /*display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 40px;
+  margin-top: 4rem;*/
 }
 
-article h1 {
-  font-size: 38px;
-  font-weight: bold;
+.about-huddle h1 {
+  font-size: 3.8rem;
+  font-weight: 400;
+  width: 90%;
 }
-.top article a:last-child {
+.about-huddle p {
+  width: 95%;
+}
+.about-huddle article a {
   display: inline-block;
   color: #ffffff;
   background-color: hsl(322, 100%, 66%);
-  padding: 15px 70px;
+  padding: 1.5rem 7rem;
   border-radius: 70px;
   margin-top: 10px;
   font-size: 14px;
   text-decoration: none;
   opacity: 0.9;
 }
-.top h1,
-.top p {
+.about-huddle h1,
+.about-huddle p {
   color: hsl(192, 100%, 9%);
   margin-bottom: 20px;
 }
 
 article a:hover,
-.top a:hover {
+.about-huddle a:hover {
   opacity: 0.5;
 }
-header div:nth-of-type(2) img {
-  width: 50%;
+.about-huddle img {
+  width: 100%;
   height: 100%;
 }
 /* MAIN SECTION*/
 
 main {
+  padding-top: 10rem;
+  padding-bottom: 25rem;
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-main div:first-child {
-  margin-top: 100px;
-}
 main div {
   width: 90%;
   height: fit-content;
-  margin: 20px auto;
-  padding: 50px 0;
+  margin: 2rem auto;
+  padding: 5rem 0;
   background-color: white;
-  border-radius: 15px;
+  border-radius: 1.5rem;
   box-shadow: 3px 3px 5px 3px rgb(220, 220, 240);
   display: flex;
   justify-content: space-around;
@@ -113,8 +125,8 @@ main div img {
 .conversation {
   display: flex;
   flex-direction: column;
-
   gap: 0.7rem;
+  width: 40%;
 }
 
 .conversation p {
@@ -124,19 +136,18 @@ main div img {
 footer {
   width: 100%;
   background-color: hsl(192, 100%, 9%);
-  margin-top: 250px;
-  padding: 200px 50px 100px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  padding: 20rem 5rem 10rem;
   position: absolute;
 }
-.facebook {
-  stroke: white;
+.footer-cont {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-between;
 }
-
-footer section div {
-  margin-top: 20px;
+.footer-cont section {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
 
 .location-text {
@@ -144,77 +155,78 @@ footer section div {
   gap: 20px;
   align-items: flex-start;
 }
-.location-text img {
-  margin-top: 5px;
-}
 .phone-text,
 .email-text {
   display: flex;
   gap: 20px;
   align-items: center;
 }
+.location-text img {
+  margin-top: 5px;
+}
 
-footer section p {
+.footer-cont section p {
   display: inline;
   color: white;
 }
-footer section a {
+.footer-cont section a {
   display: block;
   text-decoration: none;
   color: white;
-  margin-top: 20px;
 }
 .test {
-  align-self: center;
-  margin-top: 120px;
   display: flex;
   flex-direction: column;
 }
+.icons {
+  display: flex;
+  gap: 1rem;
+}
+.ion-ico {
+  color: white;
+  font-size: 1.2rem;
+  border: 1px solid #fff;
+  padding: 0.5rem;
+  border-radius: 50%;
+}
 
-footer + article {
+.floating {
   width: fit-content;
   background-color: white;
-  box-shadow: 3px 3px 5px 2px rgb(245, 241, 241);
-  padding: 60px 100px;
-  border-radius: 20px;
+  box-shadow: 3px 3px 2px rgb(245, 241, 241);
+  padding: 6rem 10rem;
+  border-radius: 15px;
   position: relative;
-  top: 120px;
-  left: 400px;
+
+  transform: translate(50%, -50%);
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-footer + article a {
+.floating a {
   display: inline-block;
   color: #ffffff;
   background-color: hsl(322, 100%, 66%);
-  padding: 20px 90px;
+  padding: 2rem 9rem;
   border-radius: 30px;
-  margin-top: 40px;
+  margin-top: 4rem;
   font-weight: 700;
   text-decoration: none;
 }
-footer + article h2 {
+.floating h2 {
   color: hsl(192, 100%, 9%);
 }
 small {
-  margin-top: 160px;
   color: white;
-}
-.icons {
-  margin: 0;
+  margin-top: 14rem;
 }
 
 .attribution {
-  font-size: 11px;
+  font-size: 1.5rem;
   text-align: center;
+  color: white;
+  margin-top: 2rem;
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
-}
-
-@media screen and (max-width: 500px) {
-  body {
-    width: 100vw;
-  }
 }
