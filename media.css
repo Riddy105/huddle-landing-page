@@ -53,9 +53,14 @@
     flex-direction: column;
     gap: 7rem;
   }
+  .float-cont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
   .floating {
-    transform: translate(13%, -50%);
-    padding: 4rem 5rem;
+    transform: translateY(-50%);
+    padding: 5rem 5rem;
   }
   .test {
     align-self: center;
@@ -66,9 +71,42 @@
   small {
     margin-top: 2rem;
   }
+
+  .no-flexbox-gap .about-huddle img {
+    margin-top: 9rem;
+  }
+
+  .no-flexbox-gap .conversation {
+    margin-top: 6rem;
+  }
+
+  .no-flexbox-gap .conversation h2 {
+    margin-bottom: 0.7rem;
+  }
+  .no-flexbox-gap .footer-cont section:not(:last-child) {
+    margin-bottom: 7rem;
+  }
+  .no-flexbox-gap .icons-block div:not(:last-child),
+  .no-flexbox-gap .links-block a:not(:last-child),
+  .no-flexbox-gap .links-2-block a:not(:last-child) {
+    margin-bottom: 2rem;
+  }
+  .no-flexbox-gap .location-text p,
+  .no-flexbox-gap .phone-text p,
+  .no-flexbox-gap .email-text p {
+    margin-left: 20px;
+  }
+
+  .no-flexbox-gap .ion-ico:not(:last-child) {
+    margin-right: 3rem;
+  }
+
+  .no-flexbox-gap .test small {
+    margin-top: 4rem;
+  }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 420px) {
   html {
     font-size: 6px;
   }
@@ -86,13 +124,13 @@
     font-size: 2.3rem;
   }
 
-  main div {
+  /* main div {
     flex-direction: column;
     margin: 4rem auto;
     padding: 8rem 5rem;
     text-align: center;
     gap: 6rem;
-  }
+  } */
 
   main div img {
     width: 90%;
@@ -103,7 +141,16 @@
   }
 
   .floating {
-    transform: translate(3%, -50%);
-    padding: 4rem 5rem;
+    transform: translateY(-50%);
+    padding: 5rem 4rem;
+  }
+}
+
+@media (max-width: 320px) {
+  .floating {
+    padding: 5rem 1rem;
+  }
+  .about-huddle h1 {
+    font-size: 3rem;
   }
 }
